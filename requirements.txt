@@ -1,0 +1,6 @@
+streamlit==1.38.0
+opencv-python==4.9.0.80
+numpy==1.26.4
+Pillow==10.3.0
+onnxruntime==1.17.1
+importlib-metadata==7.0.1
