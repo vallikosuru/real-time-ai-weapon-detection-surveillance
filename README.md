@@ -1,81 +1,33 @@
-# Real-Time AI-Based Weapon Detection and Surveillance System with WhatsApp Alerting
+# Real-Time AI-Based Weapon Detection and Surveillance System
 
-## 📌 Overview
+A Python-based real-time surveillance system that uses multiple deep learning models to detect potential weapons from video input and send automatic WhatsApp alerts.
 
-This project is a real-time AI-based weapon detection and surveillance
-system developed using Python, Deep Learning, and Computer Vision.
+## Features
 
-The system uses a combination of deep learning models to analyze
-real-time video input and identify potential weapons. When a potential
-weapon is detected, the system generates an alert and automatically
-sends a WhatsApp notification.
-
-The project combines AI-based image analysis, real-time video
-processing, alert generation, and notification services into an
-end-to-end surveillance solution.
-
----
-
-## 🚀 Key Features
-
-- Real-time video surveillance
-- AI-based weapon detection
-- Multi-model deep learning approach
-- Image and video processing
-- Weapon classification and confidence scoring
-- Automated alert generation
+- Real-time weapon detection
+- Multiple deep learning models
+- Computer vision with OpenCV
 - WhatsApp alert notifications
-- Alarm notification
 - Firebase integration
-- Incident recording and management
-- Real-time monitoring
+- Detection confidence scoring
 
----
+## Technologies
 
-## 🧠 AI & Deep Learning
+**Python | Deep Learning | ResNet-50 | OpenCV | Firebase | Twilio**
 
-The system uses multiple deep learning models as part of the
-weapon detection pipeline.
-
-One of the models used in the project is **ResNet-50**, which is
-utilized for deep learning-based image analysis and classification.
-
-The multi-model approach is designed to improve the reliability of
-weapon detection and classification in surveillance scenarios.
-
----
-
-## 🔄 System Workflow
+## Workflow
 
 ```text
-        Camera / Video Input
-                │
-                ▼
-       Real-Time Video Processing
-                │
-                ▼
-        Preprocessing / Frames
-                │
-                ▼
-       Multiple AI/ML Models
-                │
-                ▼
-        Weapon Detection
-                │
-                ▼
-     Confidence / Classification
-                │
-          ┌─────┴─────┐
-          │           │
-       No Weapon    Weapon Detected
-          │           │
-          ▼           ▼
-       Continue    Generate Alert
-                      │
-              ┌───────┴────────┐
-              │                │
-              ▼                ▼
-        Alarm / Record     WhatsApp Alert
-                               │
-                               ▼
-                         Notification
+Camera / Video
+      ↓
+AI Models
+      ↓
+Weapon Detection
+      ↓
+Alert Generation
+      ↓
+WhatsApp Notification
+
+Setup
+pip install -r requirements.txt
+python app.py
